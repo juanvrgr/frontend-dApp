@@ -1,0 +1,93 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.contract {
+  text-align: center;
+  color: whitesmoke;
+  
+}
+
+.count {
+  color: #BF0A30
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: #BF0A30;
+}
+
+.smiling {
+  text-align: center;
+  margin: 0px auto;
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+}
+
+.mining {
+  text-align: center;
+  margin: 0px auto;
+  width: 50px;
+  height: 50px;
+  font-size: 3rem;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.allWaves {
+  margin-top: 10px;
+}
+
+.address { font-size: 0.7rem; }
+
+@media only screen and (min-width: 600px) {
+  .dataContainer {
+    max-width: 600px;
+  }
+  .address { font-size: 1rem; }
+}
